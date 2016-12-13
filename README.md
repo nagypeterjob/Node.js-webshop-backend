@@ -13,6 +13,7 @@ Part of my Thesis work
 
 
 ###Architecture:
+![Image of architecture](https://github.com/nagypeterjob/Node.js-webshop-backend/blob/master/archi2.png)
 ![Image of architecture](https://github.com/nagypeterjob/Node.js-webshop-backend/blob/master/archi.png)
 
 ###ER-Diagram
