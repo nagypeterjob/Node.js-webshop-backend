@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{{title}}}</title>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="/templates/style/main.css"/>
+</head>
+
+<body>
+  <div class="container-fluid">
+  <div class="row header">
+    <div class="col-md-6" id="left">
+          <a id="home" href="/admin/"><h1>Dashboard</h1></a>
+    </div>
+    <div class="col-md-6" id="right">
+          <span class="glyphicon glyphicon-user" style="margin-right:5px;"></span><span id="user">{{name}}</span>
+          <div><a href="/logout"><span class="glyphicon glyphicon-log-out"></span></a></div>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-md-3">
+        <ul id="menu">
+          <li><a href="/admin/categories">Categories</a></li>
+          <li><a href="/admin/collections">Collections</a></li>
+          <li><a href="/admin/products">Products - Stock - Images</a></li>
+          <li>Discounts</li>
+          <li>Materials</li>
+          <li>Users</li>
+          <li>Send newsletter</li>
+          <li>Orders</li>
+        </ul>
+    </div> 
+    <div class="col-md-9 content">
+      {{{content}}}
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="/node_modules/jquery.cookie/jquery.cookie.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script   src="http://code.jquery.com/ui/1.9.1/jquery-ui.min.js"   integrity="sha256-UezNdLBLZaG/YoRcr48I68gr8pb5gyTBM+di5P8p6t8="   crossorigin="anonymous"></script>
+  <script src="/templates/app/app.js"></script>
+</body>
+</html>

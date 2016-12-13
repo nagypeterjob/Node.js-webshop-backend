@@ -1,0 +1,74 @@
+<div class="col-md-4" id="product-menu">
+
+</div>
+<div class="col-md-8" id="content">
+	<h2>Product Preferences:</h2>
+	<button class="btn btn-default new" id="product-new">NEW +</button>
+	<div id="product-preferences">
+		<h4>Name:</h4>
+		<input type="text" class="form-control" id="product-name" placeholder="clothe name" />
+		<h4>Description:</h4>
+		<input type="text" class="form-control" id="product-description" placeholder="clothe description" />
+		<h4>Date added:</h4>
+		<h3 id="product-date">-</h3>
+		<h4>Price:</h4>
+		<input type="text" class="form-control" id="product-price" id="product-price" placeholder="clothe price" />
+		<h4>Collection:</h4>
+		<select id="product-collection">
+			<option>------</option>
+        </select>
+		<h4>Category:</h4>
+		<select id="product-category">
+			<option>------</option>
+        </select>
+		<h4>Images:</h4>
+		<form enctype="multipart/form-data" method="POST" action="#" id="product-form">
+			<input type="file" name="files[]" multiple="true" id="product-files"/>
+			<button class="btn btn-primary" id="product-image-upload" value="Upload">Upload</button>
+		</form>
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+			<div class="panel panel-default" id="product-panel">
+				<div class="panel-heading" role="tab" id="headingOne">
+					<h4 class="panel-title">
+						<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          					Images
+        				</a>
+					</h4>
+				</div>
+				<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+					<div class="panel-body" id="images-list">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<h4>Materials:</h4>
+		<select id="product-materials" multiple>
+			<option>------</option>
+        </select>
+		<h4>Stock:</h4>
+		<div class="input-group">
+			<span class="input-group-addon size-label" id="product-xl">XL</span>
+			<input type="text" class="form-control product-size" id="product-xl-text" placeholder="Extra large" aria-describedby="product-xl">
+		</div>
+		<div class="input-group">
+			<span class="input-group-addon size-label" id="product-l">L</span>
+			<input type="text" class="form-control product-size" id="product-l-text" placeholder="Large" aria-describedby="product-l">
+		</div>
+		<div class="input-group">
+			<span class="input-group-addon size-label" id="product-m">M</span>
+			<input type="text" class="form-control product-size" id="product-m-text" placeholder="Medium" aria-describedby="product-m">
+		</div>
+		<div class="input-group">
+			<span class="input-group-addon size-label" id="product-s">S</span>
+			<input type="text" class="form-control product-size" id="product-s-text" placeholder="Small" aria-describedby="product-s">
+		</div>
+		<div class="input-group">
+			<span class="input-group-addon size-label" id="product-xs">XS</span>
+			<input type="text" class="form-control product-size" id="product-xs-text" placeholder="Extra small" aria-describedby="product-xs">
+		</div>
+		<button class="btn btn-primary pull-right" id="product-save" value="Save">Save</button>
+	</div>
+</div>

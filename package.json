@@ -1,0 +1,36 @@
+{
+  "name": "project_gyorok",
+  "version": "1.0.0",
+  "description": "Webshop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Peter Nagy",
+  "license": "MIT",
+  "dependencies": {
+    "aguid": "^1.0.4",
+    "dotenv": "*",
+    "handlebars": "*",
+    "hapi": "^11.0.0",
+    "hapi-auth-jwt": "^4.0.0",
+    "hapi-auth-jwt2": "^7.1.3",
+    "hoek": "*",
+    "inert": "^4.0.2",
+    "joi": "^5.1.0",
+    "jsonwebtoken": "^7.1.9",
+    "mysql": "2.11.1",
+    "q": "*",
+    "sequelize": "^2.0.0-rc7",
+    "vision": "*",
+    "paypal-rest-sdk": "*"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.17.1",
+    "gulp": "^3.8.10",
+    "gulp-nodemon": "^1.0.5",
+    "joi": "^5.1.0",
+    "lab": "^11.2.1",
+    "sequelize-cli": "^1.0.3"
+  }
+}
